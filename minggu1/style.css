@@ -1,0 +1,387 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #ffffff;
+    padding: 20px 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #222;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 30px;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+
+/* =========================
+   HERO / HOME
+========================= */
+
+main section:first-child {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+    text-align: left;
+}
+
+main section:first-child img {
+    order: 2;
+
+    width: 330px;
+    height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+main section:first-child h2 {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+main section:first-child h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+main section:first-child p {
+    max-width: 550px;
+    color: #555;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   ABOUT & SKILLS
+========================= */
+
+section ul {
+    padding-left: 20px;
+}
+
+section li {
+    margin-bottom: 7px;
+}
+
+/* =================================
+   PORTFOLIO
+================================= */
+
+.portfolio-page main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 30px;
+}
+
+.portfolio-page main > section > h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.portfolio-page main > section {
+    margin-bottom: 50px;
+}
+
+
+/* Project cards */
+
+.portfolio-page article {
+    background-color: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+
+    padding: 28px;
+    margin-bottom: 25px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.portfolio-page article h3 {
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+
+.portfolio-page article p {
+    color: #666;
+    margin-bottom: 22px;
+}
+
+
+/* Technologies */
+
+.portfolio-page article h4 {
+    font-size: 14px;
+    margin: 18px 0 8px;
+    color: #333;
+}
+
+.portfolio-page article ul {
+    padding-left: 20px;
+    margin-top: 5px;
+    color: #555;
+}
+
+.portfolio-page article li {
+    margin-bottom: 5px;
+}
+
+
+/* Repository link */
+
+.portfolio-page article > a {
+    display: inline-block;
+    margin-top: 15px;
+
+    padding: 9px 16px;
+
+    background-color: #222;
+    color: white;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.portfolio-page article > a:hover {
+    background-color: #444;
+}
+
+
+/* =================================
+   CONTACT
+================================= */
+
+.contact-page main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 30px;
+}
+
+.contact-page main > section > h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-page main > section > p {
+    color: #666;
+    margin-bottom: 35px;
+}
+
+
+/* Contact layout */
+
+.contact-page main > section {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+
+/* Contact information */
+
+.contact-page main > section > div:first-of-type {
+    background-color: #ffffff;
+    padding: 28px;
+
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+}
+
+.contact-page main > section > div:first-of-type h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contact-page main > section > div:first-of-type p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.contact-page main > section > div:first-of-type a {
+    color: #222;
+    text-decoration: none;
+}
+
+.contact-page main > section > div:first-of-type a:hover {
+    text-decoration: underline;
+}
+
+
+/* Contact form */
+
+.contact-page form {
+    background-color: #ffffff;
+
+    padding: 30px;
+
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.contact-page form h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contact-page form label {
+    display: block;
+
+    margin-top: 16px;
+    margin-bottom: 6px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-page form input,
+.contact-page form select,
+.contact-page form textarea {
+    width: 100%;
+
+    padding: 11px 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    background-color: #fff;
+}
+
+.contact-page form input:focus,
+.contact-page form select:focus,
+.contact-page form textarea:focus {
+    outline: none;
+    border-color: #555;
+}
+
+.contact-page form textarea {
+    resize: vertical;
+}
+
+.contact-page form button {
+    margin-top: 20px;
+
+    padding: 11px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #222;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.contact-page form button:hover {
+    background-color: #444;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 700px) {
+
+    .portfolio-page main,
+    .contact-page main {
+        padding: 40px 20px;
+    }
+
+    .contact-page main > section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+}
