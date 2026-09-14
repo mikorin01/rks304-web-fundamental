@@ -5,48 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Raisya Tri Hapsari</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 </head>
-
 <body class="portfolio-page">
-
-    <!-- Header & Navigation -->
     <header>
-       <div class="logo">
-        <a href="index.html">RTH</a>
-       </div>
-
+        <div class="logo"><a href="index.html">RTH</a></div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-
     <main>
-
-        <!-- Portfolio Section -->
         <section>
             <h2>My Projects</h2>
 
-            <!-- Project 1 -->
             <article>
                 <h3>IntraOffice</h3>
-
-                <p>
-                    Internal chat using Active Directory,
-                    accessible only from company devices,
-                    with hardened endpoints to prevent unauthorized data extraction.
-                </p>
+                <p>Internal chat using Active Directory, accessible only from company devices, with hardened endpoints to prevent unauthorized data extraction.</p>
 
                 <h4>Technologies</h4>
-
                 <ul>
-                   <li>Networking: pfSense, Windows Enterprise, Ubuntu Server, Windows Server</li>
-                   <li>Application: HTML, CSS, JavaScript, JSON, React</li>
-                   <li>Security: Digital Certificates, TLS, User Certificates</li>
+                    <li>Networking: pfSense, Windows Enterprise, Ubuntu Server, Windows Server</li>
+                    <li>Application: HTML, CSS, JavaScript, JSON, React</li>
+                    <li>Security: Digital Certificates, TLS, User Certificates</li>
                 </ul>
 
                 <h4>My Contributions</h4>
@@ -59,18 +44,11 @@
                 <a href="https://github.com/mikorin01/IntraOffice" target="_blank">View Repository</a>
             </article>
 
-
-            <!-- Project 2 -->
             <article>
                 <h3>Personal Profile Website</h3>
-
-                <p>
-                    A personal profile website created as part of
-                    the Web Fundamental practicum.
-                </p>
+                <p>A personal profile website created as part of the Web Fundamental practicum.</p>
 
                 <h4>Technologies</h4>
-
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -78,57 +56,12 @@
 
                 <a href="https://github.com/mikorin01/rks304-web-fundamental" target="_blank">View Repository</a>
             </article>
-
         </section>
 
-
-        <!-- Contact Section (footer block, no form) -->
-        <section id="contact" class="contact-block">
-            <h2>Let's build something secure together</h2>
-
-            <p>
-                Have a project, an opportunity, or just want to say hi?
-                Reach out through any of the channels below.
-            </p>
-
-            <div class="contact-block__email-row">
-                <a href="mailto:raisyatrihapsari@email.com" class="contact-block__email">
-                    raisyatrihapsari@email.com
-                </a>
-                <button type="button" class="contact-block__copy" data-email="raisyatrihapsari@email.com">
-                    Copy
-                </button>
-            </div>
-
-            <div class="contact-block__links">
-                <a href="https://www.linkedin.com/in/raisya-tri-hapsari/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/mikorin01" target="_blank">GitHub</a>
-            </div>
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Raisya Tri Hapsari</p>
-    </footer>
-    <!-- Copy email button -->
-    <script>
-        document.querySelectorAll('.contact-block__copy').forEach(function (btn) {
-            btn.addEventListener('click', function () {
-                navigator.clipboard.writeText(btn.dataset.email).then(function () {
-                    var original = btn.textContent;
-                    btn.textContent = 'Copied!';
-                    btn.disabled = true;
-                    setTimeout(function () {
-                        btn.textContent = original;
-                        btn.disabled = false;
-                    }, 1500);
-                });
-            });
-        });
-    </script>
-
+         <section class="contact-link">
+    <h2>Let's Connect</h2>
+    <p>Have a project or want to get in touch?</p>
+    <a href="contact.html">Contact Me →</a>
+</section>
 </body>
 </html>

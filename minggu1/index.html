@@ -5,125 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Raisya Tri Hapsari</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 </head>
-
-<body>
-
-    <!-- Header & Navigation -->
+<body class="home">
     <header>
-       <div class="logo">
-        <a href="index.html">RTH</a>
-       </div>
-
+        <div class="logo"><a href="index.html">RTH</a></div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li> 
             </ul>
         </nav>
     </header>
 
+   <main>
+    <div class="home-content">
 
-    <main>
+        <div class="home-left">
 
-        <!-- Hero Section -->
-        <section>
-            <div>
-                <h2>Hello, I'm Raisya!</h2>
-                <h3>Cyber Security Student</h3>
+            <section class="hero">
+                <div>
+                    <h2>Hello, I'm Raisya!</h2>
+                    <h3>Cyber Security Student</h3>
+                    <p>I enjoy learning through hands-on practice, experimenting with new ideas, and solving problems along the way.</p>
+                </div>
+            </section>
 
-                <p>
-                    I am a student who is interested in cybersecurity,
-                    networking, web development, and CTF.
-                </p>
-            </div>
-            <img src="assets/profile.png" alt="Profile photo of Raisya Tri Hapsari">
-        </section>
+            <section>
+                <h2>About Me</h2>
+                <p>I became interested in Cyber Security because I was curious about real-world cases and how 
+                    security incidents happen. As I learn more, I have become especially interested in networking, 
+                    digital forensics, and Capture The Flag (CTF).I am still exploring different areas of cybersecurity 
+                    and building my fundamentals through college projects, hands-on practice, and small experiments. 
+                    I enjoy learning topics that challenge me to understand how systems work and how problems can be investigated.</p>
 
+                <h2>Education</h2>
+                <p>Politeknik Negeri Batam<br>Cyber Security<br>2025 - Present</p>
+            </section>
 
-        <!-- About Section -->
-        <section>
-            <h2>About Me</h2>
+        </div>
 
-            <p>
-                I am currently studying Cyber Security and learning
-                the basics of programming, networking, Linux, and
-                web development.
-            </p>
+        <img class="profile-image" src="assets/profile.png" alt="Profile photo of Raisya Tri Hapsari">
 
-            <h3>Education</h3>
+    </div>
+    <!-- SKILLS DAN CONTACT -->
+   <section>
+    <h2>My Skills</h2>
+    <ul class="skills-list">
+        <li><i class="ti ti-brand-html5"></i>HTML</li>
+        <li><i class="ti ti-brand-css3"></i>CSS</li>
+        <li><i class="ti ti-brand-python"></i>Python</li>
+        <li><i class="ti ti-terminal-2"></i>Linux</li>
+        <li><i class="ti ti-flag-3"></i>CTF</li>
+        <li><i class="ti ti-network"></i>Computer Networking</li>
+    </ul>
+</section>
 
-            <p>
-                Politeknik Negeri Batam<br>
-                Cyber Security<br>
-                2025 - Present
-            </p>
-        </section>
-
-
-        <!-- Skills Section -->
-        <section>
-            <h2>My Skills</h2>
-
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Python</li>
-                <li>Linux</li>
-                <li>CTF</li>
-                <li>Computer Networking</li>
-            </ul>
-        </section>
-
-
-        <!-- Contact Section (footer block, no form) -->
-        <section id="contact" class="contact-block">
-            <h2>Let's build something secure together</h2>
-
-            <p>
-                Have a project, an opportunity, or just want to say hi?
-                Reach out through any of the channels below.
-            </p>
-
-            <div class="contact-block__email-row">
-                <a href="mailto:raisyatrihapsari@email.com" class="contact-block__email">
-                    raisyatrihapsari@email.com
-                </a>
-                <button type="button" class="contact-block__copy" data-email="raisyatrihapsari@email.com">
-                    Copy
-                </button>
-            </div>
-
-            <div class="contact-block__links">
-                <a href="https://www.linkedin.com/in/raisya-tri-hapsari/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/mikorin01" target="_blank">GitHub</a>
-            </div>
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Raisya Tri Hapsari</p>
-    </footer>
-    <!-- Copy email button -->
-    <script>
-        document.querySelectorAll('.contact-block__copy').forEach(function (btn) {
-            btn.addEventListener('click', function () {
-                navigator.clipboard.writeText(btn.dataset.email).then(function () {
-                    var original = btn.textContent;
-                    btn.textContent = 'Copied!';
-                    btn.disabled = true;
-                    setTimeout(function () {
-                        btn.textContent = original;
-                        btn.disabled = false;
-                    }, 1500);
-                });
-            });
-        });
-    </script>
-
+        <section class="contact-link">
+            <h2>Let's Connect</h2>
+            <p>Have a project or want to get in touch?</p>
+            <a href="contact.html">Contact Me →</a>
+    </section>
 </body>
 </html>

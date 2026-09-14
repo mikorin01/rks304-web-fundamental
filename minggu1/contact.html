@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Raisya Tri Hapsari</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 </head>
-
 <body class="contact-page">
-
-    <!-- Header & Navigation -->
     <header>
-       <div class="logo">
-        <a href="index.html">RTH</a>
-       </div>
-
+        <div class="logo"><a href="index.html">RTH</a></div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -24,93 +19,64 @@
         </nav>
     </header>
 
-
     <main>
-
-        <!-- Contact Section -->
         <section>
             <h2>Contact Me</h2>
+            <p>Feel free to reach out to me through my social media or send me a message using the form below.</p>
 
-            <p>
-                Feel free to reach out to me through my social media
-                or send me a message using the form below.
-            </p>
-
-            <!-- Social Links -->
-            <div>
+            <div class="contact-grid">
+            <div class="contact-card">
                 <h3>Find Me Online</h3>
-
-                <p>
-                    <strong>Email:</strong>
-                    <a href="mailto:raisyatrihapsari@email.com">raisyatrihapsari@email.com</a>
-                </p>
-
-                <p>
-                    <strong>LinkedIn:</strong>
-                    <a href="https://www.linkedin.com/in/raisya-tri-hapsari/" target="_blank">
-                        LinkedIn
-                    </a>
-                </p>
-
-                <p>
-                    <strong>GitHub:</strong>
-                    <a href="https://github.com/mikorin01" target="_blank">
-                        GitHub
-                    </a>
-                </p>
+                <p><i class="ti ti-mail logo"></i><a href="mailto:raisyatrihapsari@email.com">raisyatrihapsari@email.com</a></p>
+                <p><i class="ti ti-brand-linkedin logo"></i><a href="https://www.linkedin.com/in/raisya-tri-hapsari/" target="_blank">LinkedIn</a></p>
+                <p><i class="ti ti-brand-github logo"></i><a href="https://github.com/mikorin01" target="_blank">GitHub</a></p>
             </div>
 
-
-            <!-- Contact Form -->
-            <div>
+            <div class="contact-card">
                 <h3>Send Me a Message</h3>
-
-                <form action="#" method="post">
-
+                <form class="contact-form" id="contactForm">
                     <label for="name">Nama Lengkap</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                    >
+                    <input type="text" id="name" name="name" required>
 
                     <label for="email">Alamat Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                    >
+                    <input type="email" id="email" name="email" required>
 
                     <label for="category">Kategori / Keperluan</label>
                     <select id="category" name="category">
+                        <option value="consultation">Konsultasi</option>
                         <option value="collaboration">Kolaborasi Proyek</option>
                         <option value="general">Pertanyaan Umum</option>
                     </select>
 
                     <label for="message">Pesan</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="5"
-                        required
-                    ></textarea>
+                    <textarea id="message" name="message" rows="5" required></textarea>
 
                     <button type="submit">Kirim Pesan</button>
-
                 </form>
+                <div class="success-popup" id="successPopup">
+                <div class="success-box">
+                    <i class="ti ti-circle-check"></i>
+                    <h3>Message Sent!</h3>
+                    <p>Thank you for reaching out. I'll get back to you soon.</p>
+                    <button type="button" id="closePopup">Close</button>
+                </div>
+                </div>
             </div>
-
         </section>
+        <script>
+            const form = document.getElementById("contactForm");
+            const popup = document.getElementById("successPopup");
+            const closePopup = document.getElementById("closePopup");
 
-    </main>
+            form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                popup.classList.add("show");
+                form.reset();
+            });
 
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Raisya Tri Hapsari</p>
-    </footer>
-
+            closePopup.addEventListener("click", function() {
+                popup.classList.remove("show");
+            });
+            </script>   
 </body>
 </html>
