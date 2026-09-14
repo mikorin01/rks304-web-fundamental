@@ -50,7 +50,7 @@ No build tools or dependencies required.
    ```
 2. Open `index.html` in your browser, or serve it locally (e.g. with the VS Code **Live Server** extension) for the best experience.
 
-## 👤 Author
+## Author
 
 **Raisya Tri Hapsari**
 Cyber Security Student, Politeknik Negeri Batam
@@ -59,6 +59,6 @@ Cyber Security Student, Politeknik Negeri Batam
 - 💼 LinkedIn: [raisya-tri-hapsari](https://www.linkedin.com/in/raisya-tri-hapsari/)
 - 💻 GitHub: [@mikorin01](https://github.com/mikorin01)
 
-## 📝 License
+## License
 
 This project is open for reference and learning purposes. Feel free to fork it, but please don't reuse the personal content (name, photo, projects) as your own.
