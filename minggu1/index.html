@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Raisya Tri Hapsari</title>
+    <title>Home | Raisya Tri Hapsari</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,15 +11,15 @@
 
     <!-- Header & Navigation -->
     <header>
-      <div class="logo">
+       <div class="logo">
         <a href="index.html">RTH</a>
-    </div>
+       </div>
 
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -76,6 +76,31 @@
             </ul>
         </section>
 
+
+        <!-- Contact Section (footer block, no form) -->
+        <section id="contact" class="contact-block">
+            <h2>Let's build something secure together</h2>
+
+            <p>
+                Have a project, an opportunity, or just want to say hi?
+                Reach out through any of the channels below.
+            </p>
+
+            <div class="contact-block__email-row">
+                <a href="mailto:raisyatrihapsari@email.com" class="contact-block__email">
+                    raisyatrihapsari@email.com
+                </a>
+                <button type="button" class="contact-block__copy" data-email="raisyatrihapsari@email.com">
+                    Copy
+                </button>
+            </div>
+
+            <div class="contact-block__links">
+                <a href="https://www.linkedin.com/in/raisya-tri-hapsari/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/mikorin01" target="_blank">GitHub</a>
+            </div>
+        </section>
+
     </main>
 
 
@@ -83,6 +108,22 @@
     <footer>
         <p>© 2026 Raisya Tri Hapsari</p>
     </footer>
+    <!-- Copy email button -->
+    <script>
+        document.querySelectorAll('.contact-block__copy').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                navigator.clipboard.writeText(btn.dataset.email).then(function () {
+                    var original = btn.textContent;
+                    btn.textContent = 'Copied!';
+                    btn.disabled = true;
+                    setTimeout(function () {
+                        btn.textContent = original;
+                        btn.disabled = false;
+                    }, 1500);
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
