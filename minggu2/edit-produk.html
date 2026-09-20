@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Produk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+  <header class="bg-indigo-500 text-indigo-100 px-6 py-4 flex justify-between items-center shadow">
+    <h1 class="text-xl font-bold">belajartailwind.com</h1>
+    <a href="index.html" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">
+      Logout
+    </a>
+  </header>
+
+  <main class="min-h-[calc(100vh-72px)] flex items-center justify-center p-6">
+    <div class="bg-white w-full max-w-lg rounded-2xl shadow-lg p-8">
+
+      <div class="text-center mb-7">
+        <div class="mx-auto mb-4 w-14 h-14 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-2xl">
+          ✎
+        </div>
+
+        <h2 class="text-3xl font-bold text-gray-800">Edit Produk</h2>
+        <p class="text-gray-500 mt-2">
+          Perbarui informasi produk yang sudah ada.
+        </p>
+      </div>
+
+      <form class="space-y-4">
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Name</label>
+          <input
+            type="text"
+            value="Keyboard"
+            required
+            class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          >
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Stock</label>
+          <input
+            type="number"
+            value="20"
+            required
+            min="0"
+            class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          >
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Description</label>
+          <textarea
+            required
+            rows="4"
+            class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          >Keyboard mechanical untuk gaming</textarea>
+        </div>
+
+        <div class="flex gap-3">
+          <a
+            href="products.html"
+            class="w-full text-center bg-gray-200 text-gray-700 py-2.5 rounded-lg font-medium hover:bg-gray-300 transition"
+          >
+            ← Back
+          </a>
+
+          <a
+            href="products.html"
+            class="w-full text-center bg-indigo-500 text-white py-2.5 rounded-lg font-medium hover:bg-indigo-600 transition"
+          >
+            Simpan Perubahan
+          </a>
+        </div>
+      </form>
+
+    </div>
+  </main>
+</body>
+</html>

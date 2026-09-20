@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-indigo-500 min-h-screen flex items-center justify-center">
+  <div class="bg-white w-full max-w-sm rounded-xl shadow-lg p-8">
+    <h1 class="text-2xl font-bold text-gray-800 text-center mb-1">belajartailwind.com</h1>
+    <p class="text-gray-500 text-center mb-6">Masuk ke panel admin</p>
+
+    <form action="template.html" method="get" class="space-y-4">
+      <div>
+        <label class="block text-gray-600 mb-1">Username</label>
+        <input
+          type="text"
+          name="username"
+          required
+          class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        >
+      </div>
+
+      <div>
+        <label class="block text-gray-600 mb-1">Password</label>
+        <input
+          type="password"
+          name="password"
+          required
+          class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        >
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-indigo-500 text-white py-2 rounded-lg hover:bg-indigo-600"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</body>
+</html>
